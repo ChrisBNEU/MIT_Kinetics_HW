@@ -1,0 +1,21 @@
+memory 1024 mb
+
+molecule mol {
+-1 1
+N 0.00000000 0.00000000 0.00000000
+O -1.11200000 0.64200000 0.00000000
+O 1.11200000 0.64200000 0.00000000
+
+}
+
+set {
+  scf_type DIRECT
+  basis 6-31G(d_p)
+  reference uks
+  geom_maxiter 50
+  print 3
+}
+
+optimize('b3lyp')
+scf_e, wfn=frequencies('b3lyp', return_wfn=True, dertype=1)
+wfn.hessian().print_out()
