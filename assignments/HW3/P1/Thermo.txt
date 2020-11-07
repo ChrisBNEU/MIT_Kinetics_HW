@@ -1,0 +1,47 @@
+ELEMENTS
+	H
+	D /2.014/
+	T /3.016/
+	C
+	CI /13.003/
+	O
+	OI /18.000/
+	N
+	Ne
+	Ar
+	He
+	Si
+	S
+	F
+	Cl
+	Br
+	I
+	X /195.083/
+END
+
+SPECIES
+    C6H11R
+    C6H11
+END
+
+THERM ALL
+	300.000  1000.000  5000.000
+
+! Thermo group additivity estimation
+C6H11R                  C   6H  11          G   100.000  5000.000 1058.04      1
+ 6.31939910E+00 4.60862990E-02-2.01054482E-05 3.90418279E-09-2.80766402E-13    2
+ 1.75644820E+03-1.28640925E+01 2.42567887E+00 1.91772479E-02 7.70631317E-05    3
+-9.45092936E-08 3.17599952E-11 4.91048537E+03 1.71519369E+01                   4
+
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-(Cds-Cds)CsHH) + group(Cs-CsHHH) + group(Cds-CdsCsH) + group(Cds-
+! CdsHH) + radical(RCCJ)
+C6H11                   C   6H  11          G   100.000  5000.000 1116.80      1
+ 1.09832478E+01 3.48880207E-02-1.40592438E-05 2.58111505E-09-1.78430806E-13    2
+ 1.38425367E+04-2.66243882E+01 1.17123121E+00 5.31401894E-02-1.58873845E-05    3
+-9.87023143E-09 5.64040644E-12 1.70875232E+04 2.65128535E+01                   4
+
+END
+
+REACTIONS    KCAL/MOLE   MOLES
+END

@@ -1,0 +1,12 @@
+# git dstore files
+*.DS_Store
+
+*.pdf
+
+*.zip
+
+*.csv
+
+*.dot
+
+*ipynb_checkpoints
